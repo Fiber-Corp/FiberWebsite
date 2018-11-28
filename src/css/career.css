@@ -1,0 +1,60 @@
+#career {
+  padding: 100px 10% 50px; }
+  #career h2 {
+    text-align: center; }
+  #career .position {
+    margin-top: 20px;
+    background-color: #e1e3e8; }
+    #career .position .posName {
+      display: table; }
+      #career .position .posName h5 {
+        height: 80px;
+        display: table-cell;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center; }
+    #career .position .posLocation {
+      display: table; }
+      #career .position .posLocation p {
+        height: 80px;
+        display: table-cell;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center; }
+    #career .position .posButton {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    #career .position .posDescription {
+      display: none; }
+      #career .position .posDescription p {
+        text-align: justify; }
+
+@media (max-width: 575.98px) {
+  #career {
+    padding-left: 5%;
+    padding-right: 5%; }
+    #career .position .posName h5 {
+      height: 50px; }
+    #career .position .posLocation {
+      padding-right: 0; }
+      #career .position .posLocation p {
+        height: 50px; }
+    #career .position .posButton {
+      padding-left: 0; }
+    #career .position .posForm {
+      padding: 0; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #career {
+    padding-left: 5%;
+    padding-right: 5%; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #career {
+    padding-left: 15%;
+    padding-right: 15%; } }
+@media (min-width: 1200px) {
+  #career {
+    padding-left: 20%;
+    padding-right: 20%; } }
+
+/*# sourceMappingURL=career.css.map */

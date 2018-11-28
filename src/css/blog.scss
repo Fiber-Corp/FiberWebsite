@@ -1,0 +1,36 @@
+#blog {
+    padding-top  : 100px;
+    padding-left : 10%;
+    padding-right: 10%;
+}
+
+.blogCard {
+    margin-bottom: 20px;
+    padding      : 20px;
+
+    .blogImg {
+        height  : 268px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            max-width     : 100%;
+            min-height    : 100%;
+            -o-object-fit : cover;
+            object-fit    : cover;
+            vertical-align: middle;
+            border-style  : none;
+        }
+    }
+
+    .blogTitle {
+        padding: 20px;
+
+        span {
+            opacity      : 0.65;
+            font-size    : 15px;
+            margin-bottom: 25px;
+            display      : block;
+        }
+    }
+}

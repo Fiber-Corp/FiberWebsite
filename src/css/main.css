@@ -1,0 +1,130 @@
+html {
+  min-height: 100%; }
+
+body {
+  min-height: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 575.98px) {
+  .page {
+    padding: 0; }
+
+  .cardImg {
+    width: 100px;
+    height: 100px;
+    object-fit: fill; }
+
+  .navbar-container {
+    background-color: #f8f9fa !important; }
+
+  .navbar-toggler {
+    background-color: #f8f9fa !important; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar-container {
+    background-color: #f8f9fa !important; }
+
+  .navbar-toggler {
+    background-color: #f8f9fa !important; } }
+@media (min-width: 1200px) {
+  .cardImg {
+    width: 300px;
+    height: 300px;
+    object-fit: fill; } }
+.page {
+  width: 100%;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+#navbar {
+  background: transparent;
+  margin: 0; }
+  #navbar .container {
+    display: flex;
+    margin: 0, auto;
+    align-items: center;
+    max-width: 1170px; }
+  #navbar #navbar-logo {
+    color: white;
+    float: left;
+    display: block;
+    background-color: transparent; }
+
+#firstPage {
+  height: 100%;
+  background-image: url("../img/firstPage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #firstPage #mainButton {
+    padding-top: 150px;
+    width: 100%;
+    text-align: center; }
+  #firstPage #subButton {
+    margin: 0;
+    width: 100%;
+    text-align: center; }
+
+#gameIntro {
+  background-color: #E9F1F7;
+  text-align: center; }
+
+#gameVideo {
+  padding: 0;
+  background-color: #E9F1F7;
+  text-align: center; }
+
+#slides {
+  padding: 0; }
+  #slides img {
+    object-fit: fill; }
+
+#projects {
+  padding-top: 50px;
+  text-align: center; }
+
+.cardImg {
+  height: 200px;
+  width: 200px;
+  object-fit: fill; }
+
+#opportunities {
+  padding-top: 50px;
+  text-align: center;
+  background-color: #E9F1F7; }
+
+#technicalstack {
+  padding-top: 50px;
+  text-align: center; }
+
+#timeline {
+  padding-top: 50px;
+  text-align: center;
+  background-color: #E9F1F7; }
+
+#partners {
+  text-align: center; }
+  #partners .partnersCard {
+    border: none; }
+  #partners .partnersImg {
+    width: 200px;
+    height: 200px;
+    object-fit: fill; }
+
+.footer {
+  width: 100%;
+  color: #E9F1F7;
+  background-color: #424C55;
+  padding: 20px;
+  margin: 0;
+  display: block;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */

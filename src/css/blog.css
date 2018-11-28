@@ -1,0 +1,28 @@
+#blog {
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.blogCard {
+  margin-bottom: 20px;
+  padding: 20px; }
+  .blogCard .blogImg {
+    height: 268px;
+    position: relative;
+    overflow: hidden; }
+    .blogCard .blogImg img {
+      max-width: 100%;
+      min-height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      vertical-align: middle;
+      border-style: none; }
+  .blogCard .blogTitle {
+    padding: 20px; }
+    .blogCard .blogTitle span {
+      opacity: 0.65;
+      font-size: 15px;
+      margin-bottom: 25px;
+      display: block; }
+
+/*# sourceMappingURL=blog.css.map */

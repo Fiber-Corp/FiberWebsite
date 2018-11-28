@@ -1,0 +1,104 @@
+#career {
+    padding: 100px 10% 50px;
+
+    h2 {
+        text-align: center;
+    }
+
+    .position {
+        margin-top      : 20px;
+        background-color: #e1e3e8;
+
+        .posName {
+            display: table;
+
+            h5 {
+                height         : 80px;
+                display        : table-cell;
+                justify-content: center;
+                vertical-align : middle;
+                text-align     : center;
+            }
+        }
+
+        .posLocation {
+            display: table;
+
+            p {
+                height         : 80px;
+                display        : table-cell;
+                justify-content: center;
+                vertical-align : middle;
+                text-align     : center;
+            }
+        }
+
+        .posButton {
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+        }
+
+        .posDescription {
+            display: none;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    #career {
+        padding-left : 5%;
+        padding-right: 5%;
+
+        .position {
+            .posName {
+                h5 {
+                    height: 50px;
+                }
+            }
+
+            .posLocation {
+                padding-right: 0;
+
+                p {
+                    height: 50px;
+                }
+            }
+
+            .posButton {
+                padding-left: 0;
+            }
+
+            .posForm {
+                padding: 0;
+            }
+        }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #career {
+        padding-left : 5%;
+        padding-right: 5%;
+    }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #career {
+        padding-left : 15%;
+        padding-right: 15%;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #career {
+        padding-left : 20%;
+        padding-right: 20%;
+    }
+}
