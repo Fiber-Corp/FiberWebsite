@@ -10,7 +10,8 @@ body {
 
 @media (max-width: 575.98px) {
   .page {
-    padding: 0; }
+    padding-left: 0;
+    padding-right: 0; }
 
   .cardImg {
     width: 100px;
@@ -36,8 +37,7 @@ body {
 .page {
   width: 100%;
   margin: 0;
-  padding-left: 10%;
-  padding-right: 10%; }
+  padding: 50px 10%; }
 
 #navbar {
   background: transparent;
@@ -76,47 +76,52 @@ body {
   background-color: #E9F1F7;
   text-align: center; }
 
-#gameVideo {
-  padding: 0;
-  background-color: #E9F1F7;
-  text-align: center; }
-
-#slides {
-  padding: 0; }
-  #slides img {
+#testimonials {
+  text-align: center;
+  background-color: #E9F1F7; }
+  #testimonials .slide {
+    padding: 0; }
+  #testimonials img {
     object-fit: fill; }
 
-#projects {
-  padding-top: 50px;
+#howitworks {
   text-align: center; }
+  #howitworks .card {
+    text-align: left;
+    border: none; }
 
 .cardImg {
   height: 200px;
   width: 200px;
   object-fit: fill; }
 
-#opportunities {
-  padding-top: 50px;
-  text-align: center;
-  background-color: #E9F1F7; }
-
-#technicalstack {
-  padding-top: 50px;
-  text-align: center; }
-
-#timeline {
-  padding-top: 50px;
-  text-align: center;
-  background-color: #E9F1F7; }
-
 #partners {
-  text-align: center; }
+  text-align: center;
+  background-color: #E9F1F7; }
   #partners .partnersCard {
     border: none; }
   #partners .partnersImg {
     width: 200px;
     height: 200px;
     object-fit: fill; }
+  #partners #submitButton {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font: bold 30px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.22);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29), inset 1px 1px 1px rgba(255, 255, 255, 0.44);
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease; }
 
 .footer {
   width: 100%;

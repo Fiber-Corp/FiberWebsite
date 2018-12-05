@@ -30,6 +30,10 @@
       #career .position .posDescription p {
         text-align: justify; }
 
+.footer {
+  position: fixed;
+  bottom: 0; }
+
 @media (max-width: 575.98px) {
   #career {
     padding-left: 5%;
