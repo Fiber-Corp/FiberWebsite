@@ -40,6 +40,7 @@ body {
   padding: 50px 10%; }
 
 #navbar {
+  width: auto;
   background: transparent;
   margin: 0; }
   #navbar .container {
@@ -55,30 +56,32 @@ body {
 
 #firstPage {
   height: 100%;
-  background-image: url("../img/firstPage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  #firstPage #mainButton {
+  color: white;
+  background-color: #6BBAEC; }
+  #firstPage #title {
     padding-top: 150px;
-    width: 100%;
-    text-align: center; }
-  #firstPage #subButton {
+    text-align: left; }
+  #firstPage #subscribe {
     margin: 0;
-    width: 100%;
-    text-align: center; }
+    text-align: left; }
 
-#gameIntro {
-  background-color: #E9F1F7;
+#tests {
   text-align: center; }
+  #tests .adventurer {
+    margin: 0;
+    padding: 0; }
+
+#whatisit {
+  background-color: #E9F1F7;
+  text-align: left; }
+  #whatisit .adventurer {
+    margin: 0;
+    padding: 0; }
 
 #testimonials {
   text-align: center;
-  background-color: #E9F1F7; }
+  background-color: #82EAFF;
+  color: white; }
   #testimonials .slide {
     padding: 0; }
   #testimonials img {
@@ -86,25 +89,13 @@ body {
 
 #howitworks {
   text-align: center; }
-  #howitworks .card {
-    text-align: left;
-    border: none; }
-
-.cardImg {
-  height: 200px;
-  width: 200px;
-  object-fit: fill; }
 
 #partners {
   text-align: center;
-  background-color: #E9F1F7; }
-  #partners .partnersCard {
-    border: none; }
-  #partners .partnersImg {
-    width: 200px;
-    height: 200px;
-    object-fit: fill; }
+  background-color: #82EAFF;
+  color: white; }
   #partners #submitButton {
+    height: 100%;
     display: inline-block;
     position: relative;
     text-align: center;
@@ -122,6 +113,17 @@ body {
     -o-transition: all 0.15s ease;
     -ms-transition: all 0.15s ease;
     transition: all 0.15s ease; }
+
+#rewards {
+  text-align: center; }
+  #rewards .card {
+    text-align: left;
+    border: none; }
+
+.cardImg {
+  height: 200px;
+  width: 200px;
+  object-fit: fill; }
 
 .footer {
   width: 100%;

@@ -60,6 +60,7 @@ body {
 }
 
 #navbar {
+    width     : auto;
     background: transparent;
     margin    : 0;
 
@@ -79,37 +80,44 @@ body {
 }
 
 #firstPage {
-    height                 : 100%;
-    background-image       : url("../img/firstPage.jpg");
-    background-repeat      : no-repeat;
-    background-position    : center;
-    background-size        : cover;
-    -webkit-background-size: cover;
-    -moz-background-size   : cover;
-    -o-background-size     : cover;
-    background-size        : cover;
+    height          : 100%;
+    color           : white;
+    background-color: #6BBAEC;
 
-    #mainButton {
+    #title {
         padding-top: 150px;
-        width      : 100%;
-        text-align : center;
+        text-align : left;
     }
 
-    #subButton {
+    #subscribe {
         margin    : 0;
-        width     : 100%;
-        text-align: center;
+        text-align: left;
     }
 }
 
-#gameIntro {
+#tests {
+    text-align: center;
+
+    .adventurer {
+        margin : 0;
+        padding: 0;
+    }
+}
+
+#whatisit {
     background-color: #E9F1F7;
-    text-align      : center;
+    text-align      : left;
+
+    .adventurer {
+        margin : 0;
+        padding: 0;
+    }
 }
 
 #testimonials {
     text-align      : center;
-    background-color: #E9F1F7;
+    background-color: #82EAFF;
+    color           : white;
 
     .slide {
         padding: 0;
@@ -122,34 +130,15 @@ body {
 
 #howitworks {
     text-align: center;
-
-    .card {
-        text-align: left;
-        border    : none;
-    }
-}
-
-.cardImg {
-    height    : 200px;
-    width     : 200px;
-    object-fit: fill;
 }
 
 #partners {
     text-align      : center;
-    background-color: #E9F1F7;
-
-    .partnersCard {
-        border: none;
-    }
-
-    .partnersImg {
-        width     : 200px;
-        height    : 200px;
-        object-fit: fill;
-    }
+    background-color: #82EAFF;
+    color           : white;
 
     #submitButton {
+        height               : 100%;
         display              : inline-block;
         position             : relative;
         text-align           : center;
@@ -168,6 +157,21 @@ body {
         -ms-transition       : all 0.15s ease;
         transition           : all 0.15s ease;
     }
+}
+
+#rewards {
+    text-align: center;
+
+    .card {
+        text-align: left;
+        border    : none;
+    }
+}
+
+.cardImg {
+    height    : 200px;
+    width     : 200px;
+    object-fit: fill;
 }
 
 .footer {

@@ -1,5 +1,16 @@
 #partners {
+    text-align : center;
     padding-top: 100px;
+
+    .partnersCard {
+        border: none;
+    }
+
+    .partnersImg {
+        width     : 200px;
+        height    : 200px;
+        object-fit: fill;
+    }
 }
 
 .footer {
