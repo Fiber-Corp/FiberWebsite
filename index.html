@@ -57,12 +57,17 @@
         </div>
     </div>
     <div id="firstPage" class="page">
-        <div class="row">
+        <div id="adbar">
+
+            <h4><a href="#"><u>Start for free with your <i>Fiber Five</i> - a curated list of apps for you to try!</u></a></h4>
+
+        </div>
+        <div id="hero" class="row">
             <div class="col-lg-8">
                 <div id="title" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="1000" class="container-fluid">
-                    <h1>
+                    <p>
                         Earn Money Anywhere
-                    </h1>
+                    </p>
                 </div>
                 <div id="subscribe" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="1000" class="container-fluid">
                     <h3>
@@ -79,7 +84,9 @@
         </div>
     </div>
     <div id="tests" class="page">
-        <h1>3,000 TESTS TAKEN SO FAR</h1>
+        <h1>
+            <font color="#E15554">3,000</font> TESTS TAKEN SO FAR
+        </h1>
         <div class="row justify-content-center">
             <div class="col-lg-3 col-md-6 col-12 adventurer">
                 <img src="./src/img/c1.jpg" class="img-fluid" alt="Responsive image">
@@ -100,7 +107,9 @@
     <div id="whatisit" class="page">
         <div class="row">
             <div class="col-md-7" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="0">
-                <h1>A Free and Trusted Way to Earn Money Online</h1>
+                <h1>
+                    <font color="#E15554">A Free and Trusted Way to Earn Money Online</font>
+                </h1>
                 <h5>There are lots of tools and applications to make money without leaving the comfort of your home. Use your time, unique skills or knowledge to earn money online.
                 </h5>
                 <h5>Fiber simplifies the process of discovering and earning form opportunities.</h5>
@@ -176,6 +185,66 @@
         </div>
     </div>
 
+    <div id="platform_content" class="page row">
+        <div id="pc_left" class="col-md-6 col-12">
+            <h1>There are several online money making markets.<br></h1>
+            <p style="font-size: 30px;">Fiber targets content relevant to the user's preferences.</p>
+            <p style="font-size: 25px;">
+
+                <strong>Gamer</strong>: Discover applications that combine fun with incentivized rewards.<br>
+
+                <strong>Tycoon</strong>: Find the best investment opportunities across asset classes easily.<br>
+
+                <strong>Adventurer</strong>: Get the edge on high-risk games.<br>
+
+                <strong>Creator</strong>: Create a sustainable income using various online tools and optimize your schedule to maximize your returns.<br>
+            </p>
+        </div>
+        <div id="pc_right" class="col-md-6 col-12 container">
+            <div class="row pc_card align-items-start">
+                <div class="col-3">
+                    <img src="./src/img/1.jpg" style="width:100px;height:100px;">
+                </div>
+                <div class="col-9">
+                    <p style="font-size:25px;">
+                        <strong>80+</strong> categories for online wealth generation
+                    </p>
+                </div>
+            </div>
+            <div class="row pc_card align-items-center">
+                <div class="col-3">
+                    <img src="./src/img/2.jpg" style="width:100px;height:100px;">
+                </div>
+                <div class="col-9">
+                    <p style="font-size:25px;">
+                        <strong>200+
+                        </strong> Applications onboard on the dashboard
+                    </p>
+                </div>
+            </div>
+            <div class="row pc_card align-items-center">
+                <div class="col-3">
+                    <img src="./src/img/3.jpg" style="width:100px;height:100px;">
+                </div>
+                <div class="col-9">
+                    <p style="font-size:25px;">
+                        <strong>1500+</strong> Fiber user signups
+                    </p>
+                </div>
+            </div>
+            <div class="row pc_card align-items-end">
+                <div class="col-3">
+                    <img src="./src/img/1.jpg" style="width:100px;height:100px;">
+                </div>
+                <div class="col-9">
+                    <p style="font-size:25px;">
+                        <strong>$3 million</strong> Made by our users
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="rewards" class="page">
         <div class="row card-deck" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="0">
             <div class="card col-lg-4">
@@ -242,7 +311,10 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+            mirror: false,
+        });
     </script>
 </body>
 

@@ -56,7 +56,7 @@ body {
 .page {
     width  : 100%;
     margin : 0;
-    padding: 50px 10%;
+    padding: 50px 20%;
 }
 
 #navbar {
@@ -83,15 +83,50 @@ body {
     height          : 100%;
     color           : white;
     background-color: #6BBAEC;
+    padding-left    : 0;
+    padding-right   : 0;
 
-    #title {
-        padding-top: 150px;
-        text-align : left;
+    #adbar {
+        margin-top      : 50px;
+        padding         : 10px;
+        width           : 100%;
+        background-color: #E15554;
+        color           : white;
+        text-align      : center;
+
+        a:link {
+            color: white;
+        }
+
+        a:active {
+            color: white;
+        }
+
+        a:hover {
+            color: #E3C800;
+        }
+
+        a:visited {
+            color: white;
+        }
     }
 
-    #subscribe {
-        margin    : 0;
-        text-align: left;
+    #hero {
+        padding-left : 20%;
+        padding-right: 20%;
+        margin       : 0;
+
+        #title {
+            padding-top: 100px;
+            text-align : left;
+            font-size  : 50px;
+            font-weight: bold;
+        }
+
+        #subscribe {
+            margin    : 0;
+            text-align: left;
+        }
     }
 }
 
@@ -156,6 +191,34 @@ body {
         -o-transition        : all 0.15s ease;
         -ms-transition       : all 0.15s ease;
         transition           : all 0.15s ease;
+    }
+}
+
+#platform_content {
+    padding   : 0;
+    margin    : 0;
+    text-align: left;
+
+    #pc_left {
+        padding-left  : 20%;
+        padding-top   : 100px;
+        padding-bottom: 100px;
+    }
+
+    #pc_right {
+        vertical-align           : middle;
+        padding-top              : 100px;
+        padding-left             : 10%;
+        padding-bottom           : 100px;
+        margin                   : 0;
+        background-color         : #9B287B;
+        border-top-left-radius   : 100%;
+        border-bottom-left-radius: 100%;
+
+        .pc_card {
+            padding-top: 5%;
+            color      : white;
+        }
     }
 }
 

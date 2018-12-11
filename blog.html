@@ -79,7 +79,10 @@
     <!-- <script src="./src/js/rss-parser.min.js"></script> -->
     <script src="./src/js/blog.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+            mirror: false,
+        });
     </script>
 </body>
 
