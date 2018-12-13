@@ -6,9 +6,13 @@ body {
   position: relative;
   display: block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden; }
 
 @media (max-width: 575.98px) {
+  #pc_right {
+    visibility: hidden; }
+
   .page {
     padding-left: 0;
     padding-right: 0; }
@@ -24,16 +28,42 @@ body {
   .navbar-toggler {
     background-color: #f8f9fa !important; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  #pc_right {
+    visibility: hidden; }
+
   .navbar-container {
     background-color: #f8f9fa !important; }
 
   .navbar-toggler {
     background-color: #f8f9fa !important; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #pc_right {
+    visibility: hidden; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #pc_right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    background: #9B287B;
+    border-radius: 50%;
+    z-index: -1; } }
 @media (min-width: 1200px) {
   .cardImg {
     width: 300px;
     height: 300px;
-    object-fit: fill; } }
+    object-fit: fill; }
+
+  #pc_right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    background: #9B287B;
+    border-radius: 50%;
+    z-index: -1; } }
 .page {
   width: 100%;
   margin: 0;
@@ -140,26 +170,28 @@ body {
 #platform_content {
   padding: 0;
   margin: 0;
-  text-align: left; }
+  text-align: left;
+  height: 1000px; }
   #platform_content #pc_left {
     padding-left: 20%;
     padding-top: 100px;
     padding-bottom: 100px; }
-  #platform_content #pc_right {
+  #platform_content #pc_right #pc_right_content {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     vertical-align: middle;
-    padding-top: 100px;
-    padding-left: 10%;
-    padding-bottom: 100px;
-    margin: 0;
-    background-color: #9B287B;
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%; }
-    #platform_content #pc_right .pc_card {
-      padding-top: 5%;
+    padding-top: 20%;
+    padding-left: 20%; }
+    #platform_content #pc_right #pc_right_content .pc_card {
+      padding-bottom: 5%;
       color: white; }
 
 #rewards {
-  text-align: center; }
+  text-align: center;
+  background-color: #82EAFF; }
   #rewards .card {
     text-align: left;
     border: none; }

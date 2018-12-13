@@ -1,8 +1,12 @@
 #partners {
-  padding-top: 100px; }
-
-.footer {
-  position: fixed;
-  bottom: 0; }
+  text-align: center;
+  padding-top: 100px;
+  min-height: 100vh; }
+  #partners .partnersCard {
+    border: none; }
+  #partners .partnersImg {
+    width: 200px;
+    height: 200px;
+    object-fit: fill; }
 
 /*# sourceMappingURL=about.css.map */

@@ -8,9 +8,14 @@ body {
     display   : block;
     margin    : 0;
     padding   : 0;
+    overflow-x: hidden;
 }
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    #pc_right {
+        visibility: hidden;
+    }
+
     .page {
         padding-left : 0;
         padding-right: 0;
@@ -32,6 +37,10 @@ body {
 }
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+    #pc_right {
+        visibility: hidden;
+    }
+
     .navbar-container {
         background-color: #f8f9fa !important;
     }
@@ -41,15 +50,41 @@ body {
     }
 }
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #pc_right {
+        visibility: hidden;
+    }
+}
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #pc_right::before {
+        content      : "";
+        position     : absolute;
+        display      : block;
+        width        : 1200px;
+        height       : 1200px;
+        background   : #9B287B;
+        border-radius: 50%;
+        z-index      : -1;
+    }
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .cardImg {
         width     : 300px;
         height    : 300px;
         object-fit: fill;
+    }
+
+    #pc_right::before {
+        content      : "";
+        position     : absolute;
+        display      : block;
+        width        : 1200px;
+        height       : 1200px;
+        background   : #9B287B;
+        border-radius: 50%;
+        z-index      : -1;
     }
 }
 
@@ -198,6 +233,7 @@ body {
     padding   : 0;
     margin    : 0;
     text-align: left;
+    height    : 1000px;
 
     #pc_left {
         padding-left  : 20%;
@@ -206,24 +242,27 @@ body {
     }
 
     #pc_right {
-        vertical-align           : middle;
-        padding-top              : 100px;
-        padding-left             : 10%;
-        padding-bottom           : 100px;
-        margin                   : 0;
-        background-color         : #9B287B;
-        border-top-left-radius   : 100%;
-        border-bottom-left-radius: 100%;
+        #pc_right_content {
+            position         : relative;
+            top              : 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform    : translateY(-50%);
+            transform        : translateY(-50%);
+            vertical-align   : middle;
+            padding-top      : 20%;
+            padding-left     : 20%;
 
-        .pc_card {
-            padding-top: 5%;
-            color      : white;
+            .pc_card {
+                padding-bottom: 5%;
+                color         : white;
+            }
         }
     }
 }
 
 #rewards {
-    text-align: center;
+    text-align      : center;
+    background-color: #82EAFF;
 
     .card {
         text-align: left;
