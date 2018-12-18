@@ -35,10 +35,18 @@ body {
     background-color: #f8f9fa !important; }
 
   .navbar-toggler {
-    background-color: #f8f9fa !important; } }
+    background-color: #f8f9fa !important; }
+
+  #slides .slide_card {
+    max-height: 80vh !important; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   #pc_right {
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  #slides .slide_card {
+    height: 50vh !important; }
+    #slides .slide_card img {
+      height: 35vh !important; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   #pc_right::before {
     content: "";
@@ -48,7 +56,12 @@ body {
     height: 1200px;
     background: #9B287B;
     border-radius: 50%;
-    z-index: -1; } }
+    z-index: -1; }
+
+  #slides .slide_card {
+    height: 50vh !important; }
+    #slides .slide_card img {
+      height: 35vh !important; } }
 @media (min-width: 1200px) {
   .cardImg {
     width: 300px;
@@ -63,7 +76,12 @@ body {
     height: 1200px;
     background: #9B287B;
     border-radius: 50%;
-    z-index: -1; } }
+    z-index: -1; }
+
+  #slides .slide_card {
+    height: 50vh !important; }
+    #slides .slide_card img {
+      height: 35vh !important; } }
 .page {
   width: 100%;
   margin: 0;
@@ -137,8 +155,24 @@ body {
   color: white; }
   #testimonials .slide {
     padding: 0; }
-  #testimonials img {
-    object-fit: fill; }
+  #testimonials .slide_card {
+    padding: 6%;
+    height: 50vh;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+    text-align: left; }
+    #testimonials .slide_card img {
+      width: 100%;
+      height: 20vh;
+      -o-object-fit: cover;
+      object-fit: cover;
+      vertical-align: middle;
+      border-style: none; }
+  #testimonials .carousel-control-prev {
+    margin-left: -15%; }
+  #testimonials .carousel-control-next {
+    margin-right: -15%; }
 
 #howitworks {
   text-align: center; }

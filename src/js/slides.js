@@ -1,27 +1,43 @@
 $(function() {
-    var $content = $('#blog');
+    var $content = $('#slides-inner');
     var data = {
-        rss_url: 'https://medium.com/feed/@CryptoPets'
+        rss_url: 'https://medium.com/feed/@CryptoPets',
     };
     $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
         if (response.status == 'ok') {
             var output = '';
+            var count = 0;
             $.each(response.items, function(k, item) {
                 console.log(item);
-                // blog card
-                output += '<div class="blogCard col-sm-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="800" data-aos-delay="0">';
-                // blog thumbnail
-                output += '<div class="blogImg"><img src="' + item.thumbnail + '" alt="thumbnail"></div>';
+                // container
+                if (count == 0) {
+                    output += '<div class="carousel-item active container slide_card"><div class="row">';
+                } else {
+                    output += '<div class="carousel-item container slide_card"><div class="row">';
+                }
+                // blog img
+                output += '<div class="col-12 col-lg-6"><img src="' + item.thumbnail + '" alt="thumbnail"></div>';
+                // description
+                output += '<div class="col-12 col-lg-6">';
                 // blog link
                 output += '<a href="' + item.link + '">';
-                // blog time
-                output += '<div class="blogTitle"><span>' + item.pubDate + '</span>';
                 // blog title
-                output += '<h4>' + item.title + '</h4></div></a>';
+                output += '<h1>' + item.title + '</h1>';
+                output += '<br>';
+                // blog subtitle
+                output += '<h2>' + item.content.substr(5, item.content.indexOf('</h4>') + 1) + '</h2>';
+                output += '<br>';
+                // blog time
+                output += '<p>' + item.pubDate + '</p></div></a>';
                 // end tag
-                output += '</div>';
+                output += '</div></div>';
+                count++;
+                if (count == 3) {
+                    return false;
+                }
             });
             $content.html(output);
+
         }
     });
 });
