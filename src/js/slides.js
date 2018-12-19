@@ -6,6 +6,7 @@ $(function() {
     $.get('https://api.rss2json.com/v1/api.json', data, function(response) {
         if (response.status == 'ok') {
             var output = '';
+            // number of slides
             var count = 0;
             $.each(response.items, function(k, item) {
                 console.log(item);
@@ -32,6 +33,7 @@ $(function() {
                 // end tag
                 output += '</div></div>';
                 count++;
+                // max number of slides
                 if (count == 3) {
                     return false;
                 }
